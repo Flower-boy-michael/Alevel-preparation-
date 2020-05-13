@@ -1,0 +1,25 @@
+import textwrap
+
+#this is how to wrap text using python's built in function
+
+desc = """According to all known laws of aviation, there is no way a bee should be able to fly. 
+It's wings are too small to get its fat little body off the ground. 
+The bee, of course, flies anyway, because bees don't care what humans think is impossible"""
+myWrap = textwrap.TextWrapper(width=40)
+wrapList = myWrap.wrap(text=desc)
+
+for line in wrapList:
+    print(line)
+
+### that is to wrap all and print all. rather simple tbh 
+### now what about a single sentance? 
+
+singleLine = "According to all known laws of aviation, there is no way a bee should be able to fly."
+print("\n\n" + myWrap.fill(text=singleLine))
+
+### again rather simple. but what if we want to set a specific length? well thats rather simple too
+
+short = textwrap.shorten(text = desc, width=150)
+print('\n\n' + myWrap.fill(text = short))
+
+### see, yet again rather simple 
