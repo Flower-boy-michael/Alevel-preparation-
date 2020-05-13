@@ -1,0 +1,13 @@
+List = [45,1,879,5,84,6,82,4]
+
+def sort(s):
+    order = True
+    while order:
+        order = False
+        for item in range(len(s) - 1):
+            if s[item] > s[item+1]:
+                s[item], s[item+1] = s[item+1], s[item]
+                order = True
+    print(s)
+              
+sort(List)
