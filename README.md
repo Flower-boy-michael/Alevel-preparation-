@@ -1,4 +1,4 @@
-i have no idea how to use git hub
-this is a first time test 
-
-but yee so i guess this is how it works 
+This is a repository for all my programming i will be doing for alevel prep 
+most, if not all will be in python 
+the resource i will use is rosetta stone 
+each new file will each be a new challenge 
